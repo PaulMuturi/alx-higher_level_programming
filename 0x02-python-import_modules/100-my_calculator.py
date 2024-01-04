@@ -4,17 +4,17 @@ if (__name__ == "__main__"):
     import sys
 
     argv = sys.argv
-    argv_count = len(argv_count)
+    argv_count = len(argv)
 
     if (argv_count != 4):
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
 
     a = int(argv[1])
-    op = int(argv[2])
+    op = argv[2]
     b = int(argv[3])
 
-    if op in {'+', '-', '*', '/'):
+    if op in {'+', '-', '*', '/'}:
         if (op == '+'):
             print(f"{a} {op} {b} = {calculator_1.add(a, b)}")
         if (op == '-'):

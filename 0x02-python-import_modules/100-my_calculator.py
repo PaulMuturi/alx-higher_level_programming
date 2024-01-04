@@ -16,13 +16,13 @@ if (__name__ == "__main__"):
 
     if op in {'+', '-', '*', '/'):
         if (op == '+'):
-            calculator_1.add(a, b)
+            print(f"{a} {op} {b} = {calculator_1.add(a, b)}")
         if (op == '-'):
-            calculator_1.sub(a, b)
+            print(f"{a} {op} {b} = {calculator_1.sub(a, b)}")
         if (op == '*'):
-            calculator_1.mul(a, b)
+            print(f"{a} {op} {b} = {calculator_1.mul(a, b)}")
         if (op == '/'):
-            calculator_1.div(a, b)
+            print(f"{a} {op} {b} = {calculator_1.div(a, b)}")
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)

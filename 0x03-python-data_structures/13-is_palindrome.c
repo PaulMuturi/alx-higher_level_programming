@@ -13,7 +13,7 @@ int is_palindrome(listint_t **head)
 	listint_t **prev, *start = *head;
 	int i = 0, list_count;
 
-	if (!*head)
+	if (*head == NULL)
 		return (1);
 
 	list_count = list_len(head);
@@ -43,7 +43,7 @@ int is_palindrome(listint_t **head)
 		else
 			break;
 	}
-
+	free(prev);
 	return (0);
 }
 /**

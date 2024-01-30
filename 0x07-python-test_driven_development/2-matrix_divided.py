@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 Multiplies elements of a matrix list  with a given number
 
@@ -9,6 +11,7 @@ Functions:
 
 def matrix_divided(matrix, div):
     """
+    Multiplies list elements within a matrix  with a given factor
     Args:
         matrix: a list containing a list on integers/floats
         div: The dividing factor

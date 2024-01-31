@@ -13,5 +13,5 @@ class Square:
             size: size of square
     """
     def __init__(self, size):
-        """Instantiates instance size attribute"""
-        self._size = size
+        """Instantiates instance attribute with value"""
+        self.__size = size

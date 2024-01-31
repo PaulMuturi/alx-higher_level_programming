@@ -1,0 +1,32 @@
+"""
+Import the module for testing
+>>> print_square = __import__('4-print_square').print_square
+
+Test for correct output with whole numbers
+>>> print_square(2)
+##
+##
+
+>>> print_square(0)
+
+Test for size is a float
+>>> print_square(4.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+
+Test for integer less than 0
+>>> print_square(-2)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+
+Test for float less than 0
+>>> print_square(-10.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+"""
